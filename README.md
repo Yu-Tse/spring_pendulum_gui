@@ -29,13 +29,6 @@ The forces acting on the mass are:
 
 According to Newton’s second law, the equations of motion are:
 
-```
-⎧ $\ddot{r}_x = -\dfrac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_x$
-⎨ $\ddot{r}_y = g - \dfrac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_y$
-```
-
-Or, as two separate equations (for best compatibility):
-
 * \$\ddot{r}\_x = -\dfrac{k (|\vec{r}| - r\_0)}{m|\vec{r}|} r\_x\$
 * \$\ddot{r}\_y = g - \dfrac{k (|\vec{r}| - r\_0)}{m|\vec{r}|} r\_y\$
 
