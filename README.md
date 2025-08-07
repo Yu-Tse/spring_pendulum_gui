@@ -11,42 +11,37 @@ This is a spring pendulum simulator using Python and Tkinter for GUI. It numeric
 - Spring animation with coils
 - Energy diagram (kinetic, potential, total)
 
-Certainly! Here’s your explanation translated into clear, academic English for your `README.md`:
-
 ---
 
-\section*{Model Description}
+## Model Description
 
 This simulation is based on the following physical model:
 
-\begin{itemize}
-    \item The spring pendulum is suspended from the origin, with spring constant $k$ and mass $m$.
-    \item The position vector of the mass is $\vec{r} = r_x \hat{i} + r_y \hat{j}$, and the natural length of the spring is $r_0$.
-    \item The spring force is given by 
-    \[
-    \vec{F}_s = -k(|\vec{r}| - r_0) \frac{\vec{r}}{|\vec{r}|},
-    \]
-    where $|\vec{r}| = \sqrt{r_x^2 + r_y^2}$.
-\end{itemize}
+* The spring pendulum is suspended from the origin, with spring constant \$k\$ and mass \$m\$.
+* The position vector of the mass is \$\vec{r} = r\_x \hat{i} + r\_y \hat{j}\$, and the natural length of the spring is \$r\_0\$.
+* The spring force is given by \$\vec{F}\_s = -k(|\vec{r}| - r\_0) \dfrac{\vec{r}}{|\vec{r}|}\$,
+  where \$|\vec{r}| = \sqrt{r\_x^2 + r\_y^2}\$.
 
 The forces acting on the mass are:
-\begin{itemize}
-    \item Spring restoring force $\vec{F}_s$
-    \item Gravitational force $mg$ (downward)
-\end{itemize}
 
-According to Newton's second law, the equations of motion are:
-\[
-\left\{
-\begin{aligned}
-\ddot{r}_x &= -\frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_x \\
-\ddot{r}_y &= g - \frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_y
-\end{aligned}
-\right.
-\]
+* Spring restoring force \$\vec{F}\_s\$
+* Gravitational force \$mg\$ (downward)
+
+According to Newton’s second law, the equations of motion are:
+
+```
+⎧ $\ddot{r}_x = -\dfrac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_x$
+⎨ $\ddot{r}_y = g - \dfrac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_y$
+```
+
+Or, as two separate equations (for best compatibility):
+
+* \$\ddot{r}\_x = -\dfrac{k (|\vec{r}| - r\_0)}{m|\vec{r}|} r\_x\$
+* \$\ddot{r}\_y = g - \dfrac{k (|\vec{r}| - r\_0)}{m|\vec{r}|} r\_y\$
+
+---
 
 <img width="865" height="995" alt="image" src="https://github.com/user-attachments/assets/39aca4f1-9be6-446b-8c44-9e20e63ba625" />
-
 
 ---
 
@@ -58,7 +53,6 @@ According to Newton's second law, the equations of motion are:
 > You can directly use $(r_x, r_y)$ in both calculations and visualization, and the mapping to the display will be correct.
 
 ---
-
 
 ## ▶️ How to Run
 
