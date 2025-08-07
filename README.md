@@ -15,30 +15,38 @@ Certainly! Here’s your explanation translated into clear, academic English for
 
 ---
 
-## Model Description
+\section*{Model Description}
 
 This simulation is based on the following physical model:
 
-* The spring pendulum is suspended from the origin, with spring constant $k$ and mass $m$.
-* The position vector of the mass is $\vec{r} = r_x \hat{i} + r_y \hat{j}$, and the natural length of the spring is $r_0$.
-* The spring force is given by $\vec{F}_s = -k(|\vec{r}| - r_0) \dfrac{\vec{r}}{|\vec{r}|}$,
-  where $|\vec{r}| = \sqrt{r_x^2 + r_y^2}$.
+\begin{itemize}
+    \item The spring pendulum is suspended from the origin, with spring constant $k$ and mass $m$.
+    \item The position vector of the mass is $\vec{r} = r_x \hat{i} + r_y \hat{j}$, and the natural length of the spring is $r_0$.
+    \item The spring force is given by 
+    \[
+    \vec{F}_s = -k(|\vec{r}| - r_0) \frac{\vec{r}}{|\vec{r}|},
+    \]
+    where $|\vec{r}| = \sqrt{r_x^2 + r_y^2}$.
+\end{itemize}
 
 The forces acting on the mass are:
+\begin{itemize}
+    \item Spring restoring force $\vec{F}_s$
+    \item Gravitational force $mg$ (downward)
+\end{itemize}
 
-* Spring restoring force $\vec{F}_s$
-* Gravitational force $mg$ (downward)
-
-According to Newton’s second law, the equations of motion are:
-
-$$
+According to Newton's second law, the equations of motion are:
+\[
 \left\{
 \begin{aligned}
 \ddot{r}_x &= -\frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_x \\
 \ddot{r}_y &= g - \frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_y
 \end{aligned}
-\right}
-$$
+\right.
+\]
+
+<img width="865" height="995" alt="image" src="https://github.com/user-attachments/assets/39aca4f1-9be6-446b-8c44-9e20e63ba625" />
+
 
 ---
 
