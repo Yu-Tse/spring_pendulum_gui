@@ -37,7 +37,7 @@ $$
 \ddot{r}_x &= -\frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_x \\
 \ddot{r}_y &= g - \frac{k (|\vec{r}| - r_0)}{m|\vec{r}|} r_y
 \end{aligned}
-\right.
+\right}
 $$
 
 ---
